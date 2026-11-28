@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<script>try{var t=localStorage.getItem('nwTheme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script src="https://hanode40-sketch.github.io/all-op/auth.js" data-tool="violation"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نورث ويست باص - محضر مخالفة</title>
+<style>
+  :root {
+    --border: #e0e0e0; --border-strong: #bbb; --surface-1: #f7f7f7; --surface-2: #ffffff;
+    --text-primary: #1a1a1a; --text-secondary: #555; --text-muted: #888;
+    --text-danger: #b3261e; --text-success: #1e7e34; --bg-success: #e6f4ea;
+    --border-success: #34a853; --radius: 8px;
+  }
+  html, body { -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background:var(--surface-1); margin:0; padding:20px; color:var(--text-primary); }
+  .wrap { max-width:1100px; margin:0 auto; }
+  input, select, button, textarea { font-family:inherit; font-size:14px; }
+  input[type=text] { padding:8px 10px; border:1px solid var(--border-strong); border-radius:var(--radius); }
+  button { padding:8px 14px; border-radius:var(--radius); border:1px solid var(--border-strong); background:#fff; cursor:pointer; }
+  button:hover { background:#f0f0f0; }
+  button:disabled { opacity:0.5; cursor:not-allowed; }
+  .bilabel { font-size:13px; color:var(--text-secondary); display:block; margin-bottom:6px; }
+  .bilabel .en { color:var(--text-muted); font-size:12px; }
+  .section-title { font-size:15px; font-weight:700; margin:0 0 12px; padding-bottom:6px; border-bottom:2px solid #1F3864; color:#1F3864; }
+  .chk-row { display:flex; align-items:flex-start; gap:8px; padding:8px 0; border-bottom:1px solid var(--border); }
+  .chk-row:last-child { border-bottom:none; }
+  .chk-row input[type=checkbox] { margin-top:3px; width:16px; height:16px; flex-shrink:0; }
+  .chk-row label { font-size:13px; line-height:1.5; cursor:pointer; }
+  .chk-row .en { display:block; color:var(--text-muted); font-size:12px; }
+  .photo-btns { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+  .photo-btns label.pbtn { display:inline-flex; align-items:center; gap:6px; padding:9px 14px; border-radius:var(--radius); border:1px solid var(--border-strong); background:#fff; cursor:pointer; font-size:14px; }
+  .photo-btns label.pbtn:active { background:#f0f0f0; }
+  .photo-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(110px,1fr)); gap:8px; }
+  .photo-grid .ph { position:relative; aspect-ratio:1/1; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); background:#eee; }
+  .photo-grid .ph img { width:100%; height:100%; object-fit:cover; display:block; }
+  .photo-grid .ph button { position:absolute; top:4px; left:4px; width:26px; height:26px; padding:0; border-radius:50%; border:0; background:rgba(0,0,0,.6); color:#fff; font-size:16px; line-height:26px; }
+
+  /* خلفية الباصات */
+  .wrap > div:first-child img { background:rgba(255,255,255,.94); border-radius:14px; padding:8px 12px; box-shadow:0 4px 14px rgba(0,0,0,.15); }
+  .wrap > h2 { color:#fff; text-shadow:0 2px 8px rgba(0,0,0,.45); }
+  .wrap > h2 + p { color:rgba(255,255,255,.92) !important; text-shadow:0 1px 6px rgba(0,0,0,.45); }
+  .wrap div[style*="border-radius:12px"] { box-shadow:0 6px 18px rgba(10,25,55,.16); }
+  #tab-form, #tab-admin { box-shadow:0 4px 12px rgba(10,25,55,.16); }
+  #record-count { color:#fff !important; font-weight:600; text-shadow:0 1px 6px rgba(0,0,0,.5); }
+  #empty-msg { background:rgba(255,255,255,.94); color:var(--text-secondary) !important; border-radius:12px; padding:16px; text-align:center; }
+  /* ===== نفس ألوان الصفحة الرئيسية ===== */
+  .section-title { border-bottom-color:#1f3f7a; color:#1f3f7a; }
+  #submit-form { background:#1f3f7a; color:#fff; border-color:#1f3f7a; }
+  #submit-form:hover { background:#18336a; }
+  .sync-ok { font-size:11px; padding:2px 8px; border-radius:999px; background:var(--bg-success); color:var(--text-success); font-weight:600; }
+  .sync-no { font-size:11px; padding:2px 8px; border-radius:999px; background:#fdecea; color:var(--text-danger); font-weight:600; }
+
+  /* ===== الوضع الليلي (نفس الصفحة الرئيسية) ===== */
+  html[data-theme="dark"] { --border:#2a3446; --border-strong:#3b4558; --surface-1:#0f1624; --surface-2:rgba(22,28,40,.94);
+    --text-primary:#f1f5f9; --text-secondary:#aab4c3; --text-muted:#8a95a8; --text-danger:#f87171; --text-success:#4ade80; --bg-success:#12301f; }
+  html[data-theme="dark"] body { background:#0b1220; color:var(--text-primary); }
+  html[data-theme="dark"] input, html[data-theme="dark"] select, html[data-theme="dark"] textarea { background:#0f1624; color:var(--text-primary); border-color:var(--border-strong) !important; color-scheme:dark; }
+  html[data-theme="dark"] button, html[data-theme="dark"] .photo-btns label.pbtn { background:#1e2a44; color:#c7d7f5; border-color:#2f3d5c; }
+  html[data-theme="dark"] button:hover { background:#25345a; }
+  html[data-theme="dark"] #submit-form { background:#2c5cc5; color:#fff; border-color:#2c5cc5; }
+  html[data-theme="dark"] .section-title { color:#9ec1ff; border-bottom-color:#6b9cff; }
+  html[data-theme="dark"] .wrap div[style*="border-radius:12px"], html[data-theme="dark"] #empty-msg { background:rgba(22,28,40,.94) !important; border-color:rgba(255,255,255,.08) !important; box-shadow:0 6px 18px rgba(0,0,0,.4); }
+  html[data-theme="dark"] .wrap div[style*="#FFF8E1"] { background:#3a2e12 !important; border-color:#6b5520 !important; }
+  html[data-theme="dark"] #drv-suggestions, html[data-theme="dark"] #supervisor-suggestions { background:#151c2b !important; border-color:var(--border-strong) !important; }
+  html[data-theme="dark"] canvas { background:#f1f5f9 !important; }
+  html[data-theme="dark"] .wrap > div:first-child img { background:rgba(255,255,255,.88); }
+  html[data-theme="dark"] .sync-no { background:#3a1e22; }
+  @media print { body { background:#fff } .wrap > h2 { color:#000; text-shadow:none } .wrap > h2 + p { color:#888 !important; text-shadow:none } }
+
+  /* ===== التصميم الموحد (ألوان auth.js --nw-*) ===== */
+  :root,html[data-theme="dark"]{--border:var(--nw-line,#e0e0e0);--surface-2:var(--nw-card,#fff);--text-primary:var(--nw-ink,#1a1a1a);--text-secondary:var(--nw-muted,#555)}
+  :root{--surface-1:var(--nw-soft,#f7f7f7)} html[data-theme="dark"]{--surface-1:#0f1624}
+  body,html[data-theme="dark"] body{background:var(--nw-bg,#eef2f8);color:var(--nw-ink);font-family:var(--nw-font,-apple-system,"Segoe UI",Arial,sans-serif);-webkit-font-smoothing:antialiased;min-height:100vh}
+  .wrap>h2{color:var(--nw-ink,#13274f)!important;text-shadow:none!important;font-size:20px!important;font-weight:800}
+  .wrap>h2+p{color:var(--nw-muted,#64748b)!important;text-shadow:none!important}
+  #record-count{color:var(--nw-muted,#64748b)!important;text-shadow:none!important}
+  #empty-msg,html[data-theme="dark"] #empty-msg{background:var(--nw-card)!important;border:1px solid var(--nw-line)!important}
+  .wrap div[style*="border-radius:12px"]:not([style*="#FFF8E1"]),html[data-theme="dark"] .wrap div[style*="border-radius:12px"]:not([style*="#FFF8E1"]),.vs-panel{background:var(--nw-card,#fff)!important;border-color:var(--nw-line)!important;box-shadow:var(--nw-shadow,0 1px 2px rgba(15,23,42,.06))!important;border-radius:16px!important}
+  .section-title,html[data-theme="dark"] .section-title{color:var(--nw-ink,#13274f)!important;border-bottom:2px solid var(--nw-line)!important;position:relative;font-size:16px}
+  .section-title::after{content:"";position:absolute;bottom:-2px;inset-inline-start:0;width:64px;height:2px;background:var(--nw-acc,#f28c28)}
+  #tab-form,#tab-admin{border-radius:12px;padding:12px;font-size:15px;background:var(--nw-card,#fff);color:var(--nw-muted);border:1px solid var(--nw-line);box-shadow:var(--nw-shadow)!important}
+  #tab-form[style*="font-weight: 600"],#tab-admin[style*="font-weight: 600"],#tab-form[style*="font-weight:600"],#tab-admin[style*="font-weight:600"]{background:var(--nw-navy,#13274f)!important;color:#fff!important;border-color:transparent!important}
+  input[type=text],input[type=search],input:not([type]),input[type=date],input[type=time],select,textarea{border-radius:10px!important;padding:10px 12px!important;border:1px solid var(--nw-line,#d6d9de)!important;background:var(--nw-card,#fff);color:var(--nw-ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid #b9c6dd;border-color:var(--nw-navy,#13274f)!important}
+  select{background:var(--nw-soft,#f1f5f9)!important}
+  button,.photo-btns label.pbtn{border-radius:10px}
+  #submit-form{background:var(--nw-navy,#13274f);border-color:transparent;padding:14px!important;font-size:16px}
+  /* ===== توسيع الصفحة على الشاشات الكبيرة ===== */
+  .wrap{max-width:none}
+  @media (min-width:1000px){
+    #view-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px;align-items:start}
+    #view-form>*{grid-column:1/-1}
+    #view-form>div:has(> .section-title){grid-column:auto}
+    #view-form>div:has(> .section-title){align-self:stretch}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div style="display:flex;justify-content:center;margin-bottom:1rem">
+  <img src="logo.png?v=1" alt="Northwest Bus" style="height:64px"/>
+</div>
+
+<h2 style="text-align:center;font-size:17px;margin:0 0 4px">محضر مخالفة وعدم اتباع التعليمات</h2>
+<p style="text-align:center;font-size:13px;color:var(--text-muted);margin:0 0 20px">Violation &amp; Non-Compliance Report</p>
+
+<div style="display:flex;gap:8px;margin-bottom:1rem">
+  <button id="tab-form" style="flex:1;font-weight:600">محضر جديد</button>
+  <button id="tab-admin" style="flex:1">سجل المحاضر</button>
+</div>
+
+<div id="view-form">
+<div style="background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1.25rem;margin-bottom:16px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+    <div>
+      <label class="bilabel">التاريخ <span class="en">Date</span></label>
+      <input id="report-date" type="date" style="width:100%;box-sizing:border-box"/>
+    </div>
+    <div>
+      <label class="bilabel">الوقت <span class="en">Time</span></label>
+      <input id="report-time" type="time" style="width:100%;box-sizing:border-box"/>
+    </div>
+  </div>
+  <div>
+    <label class="bilabel">الموقع / الكراج <span class="en">Location / Depot</span></label>
+    <select id="depot-select" style="width:100%;padding:8px 10px;border:1px solid var(--border-strong);border-radius:var(--radius);box-sizing:border-box">
+      <option value="">اختر الموقع</option>
+      <option value="كراج الشميسي / Al Shumaisi Garage">كراج الشميسي / Al Shumaisi Garage</option>
+      <option value="كراج الرياض / Riyadh Garage">كراج الرياض / Riyadh Garage</option>
+      <option value="كراج المدينة / Madinah Garage">كراج المدينة / Madinah Garage</option>
+      <option value="كراج تبوك / Tabuk Garage">كراج تبوك / Tabuk Garage</option>
+      <option value="كراج حائل / Hail Garage">كراج حائل / Hail Garage</option>
+      <option value="كراج خميس مشيط / Khamis Mushait Garage">كراج خميس مشيط / Khamis Mushait Garage</option>
+      <option value="كراج جازان / Jazan Garage">كراج جازان / Jazan Garage</option>
+      <option value="كراج البشائر / Al Bashayer Garage">كراج البشائر / Al Bashayer Garage</option>
+      <option value="كراج بريدة / Buraidah Garage">كراج بريدة / Buraidah Garage</option>
+    </select>
+  </div>
+</div>
+
+<div style="background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1.25rem;margin-bottom:16px">
+  <p class="section-title">1- بيانات السائق <span style="font-weight:400;font-size:12px;color:var(--text-muted)">Driver Information</span></p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:8px">
+    <div style="position:relative">
+      <label class="bilabel">رقم الإقامة <span class="en">Iqama Number</span></label>
+      <input id="drv-id" type="text" placeholder="مثال: 2xxxxxxxxx" autocomplete="off" style="width:100%;box-sizing:border-box"/>
+      <div id="drv-suggestions" style="display:none;position:absolute;top:100%;left:0;right:0;z-index:20;background:#fff;border:1px solid var(--border-strong);border-top:none;border-radius:0 0 var(--radius) var(--radius);max-height:220px;overflow-y:auto;box-shadow:0 4px 10px rgba(0,0,0,0.08)"></div>
+    </div>
+    <div>
+      <label class="bilabel">اسم السائق <span class="en">Driver Name</span></label>
+      <input id="drv-name" type="text" placeholder="يُعبّى تلقائياً أو يدوياً" style="width:100%;box-sizing:border-box"/>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div>
+      <label class="bilabel">الرقم الوظيفي <span class="en">Employee ID</span></label>
+      <input id="drv-empid" type="text" placeholder="يُعبّى تلقائياً" style="width:100%;box-sizing:border-box"/>
+    </div>
+    <div>
+      <label class="bilabel">المسار / الرحلة <span class="en">Route / Trip</span></label>
+      <input id="drv-trip" type="text" placeholder="مثال: NW15-O-1" style="width:100%;box-sizing:border-box"/>
+    </div>
+  </div>
+  <div style="margin-top:12px">
+    <label class="bilabel">رقم الحافلة <span class="en">Bus No.</span></label>
+    <input id="bus-no" type="text" placeholder="رقم الحافلة" style="width:100%;box-sizing:border-box"/>
+  </div>
+  <p id="drv-status" style="font-size:12px;color:var(--text-muted);margin:8px 0 0"></p>
+</div>
+
+<div style="background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1.25rem;margin-bottom:16px">
+  <p class="section-title">2- نوع المخالفة <span style="font-weight:400;font-size:12px;color:var(--text-muted)">Type of Violation</span></p>
+  <div class="chk-row">
+    <input type="checkbox" id="v1" class="viol-chk" data-ar="عدم اتباع تعليمات المشرف أو الإدارة" data-en="Failure to follow Supervisor / Management instructions"/>
+    <label for="v1">عدم اتباع تعليمات المشرف أو الإدارة<span class="en">Failure to follow Supervisor / Management instructions</span></label>
+  </div>
+  <div class="chk-row">
+    <input type="checkbox" id="v2" class="viol-chk" data-ar="رفض تنفيذ الرحلة المجدولة" data-en="Refusal to operate the scheduled trip"/>
+    <label for="v2">رفض تنفيذ الرحلة المجدولة<span class="en">Refusal to operate the scheduled trip</span></label>
+  </div>
+  <div class="chk-row">
+    <input type="checkbox" id="v3" class="viol-chk" data-ar="مغادرة موقع العمل دون إذن" data-en="Leaving the workplace without permission"/>
+    <label for="v3">مغادرة موقع العمل دون إذن<span class="en">Leaving the workplace without permission</span></label>
+  </div>
+  <div class="chk-row">
+    <input type="checkbox" id="v4" class="viol-chk" data-ar="التأخر أو عدم الحضور في الوقت المحدد" data-en="Late arrival or failure to report on time"/>
+    <label for="v4">التأخر أو عدم الحضور في الوقت المحدد<span class="en">Late arrival or failure to report on time</span></label>
+  </div>
+  <div class="chk-row">
+    <input type="checkbox" id="v5" class="viol-chk" data-ar="عدم الالتزام بالزي الرسمي" data-en="Failure to comply with uniform requirements"/>
+    <label for="v5">عدم الالتزام بالزي الرسمي<span class="en">Failure to comply with uniform requirements</span></label>
+  </div>
+  <div class="chk-row">
+    <input type="checkbox" id="v6" class="viol-chk" data-ar="سوء السلوك أو التعامل" data-en="Misconduct or inappropriate behavior"/>
+    <label for="v6">سوء السلوك أو التعامل<span class="en">Misconduct or inappropriate behavior</span></label>
+  </div>
+  <div class="chk-row" style="align-items:center">
+    <input type="checkbox" id="v7" class="viol-chk"/>
+    <label for="v7" style="flex:1">مخالفة أخرى<span class="en">Other Violation</span></label>
+  </div>
+  <input id="v7-text" type="text" placeholder="اكتب المخالفة الأخرى هنا" style="width:100%;box-sizing:border-box;margin-top:8px;display:none"/>
+  <p id="viol-error" style="color:var(--text-danger);font-size:12px;margin:8px 0 0;display:none">الرجاء اختيار نوع مخالفة واحد على الأقل</p>
+</div>
+
+<div style="background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1.25rem;margin-bottom:16px">
+  <p class="section-title">3- وصف المخالفة بالتفصيل <span style="font-weight:400;font-size:12px;color:var(--text-muted)">Detailed Description</span></p>
+  <textarea id="description-text" rows="4" placeholder="وصف تفصيلي للمخالفة..." style="width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid var(--border-strong);border-radius:var(--radius);margin-bottom:12px;resize:vertical"></textarea>
+  <label class="bilabel">ملاحظات <span class="en">Remarks</span></label>
+  <textarea id="remarks-text" rows="2" placeholder="ملاحظات إضافية (اختياري)" style="width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid var(--border-strong);border-radius:var(--radius);resize:vertical"></textarea>
+</div>
+
+<div style="background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1.25rem;margin-bottom:16px">
+  <p class="section-title">صور الحالة <span style="font-weight:400;font-size:12px;color:var(--text-muted)">Case Photos (اختياري — حتى 4 صور)</span></p>
+  <div class="photo-btns">
+    <label class="pbtn">📷 التقاط صورة<input type="file" id="photo-camera" accept="image/*" capture="environment" hidden></label>
+    <label class="pbtn">🖼️ من المعرض<input type="file" id="photo-gallery" accept="image/*" multiple hidden></label>
+  </div>
+  <p id="photo-msg" style="font-size:12px;color:var(--text-muted);margin:0 0 8px"></p>
+  <div class="photo-grid" id="photo-grid"></div>
+</div>
+
+<div style="background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1.25rem;margin-bottom:16px">
+  <p class="section-title">4- السائق <span style="font-weight:400;font-size:12px;color:var(--text-muted)">Driver</span></p>
+  <label class="bilabel">توقيع السائق <span class="en">Driver Signature</span></label>
+  <canvas id="driver-sig" width="620" height="130" style="width:100%;height:130px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface-1);touch-action:none"></canvas>
+  <div style="display:flex;justify-content:flex-end;margin:6px 0 0">
+    <button id="driver-sig-clear" style="font-size:12px">مسح التوقيع</button>
+  </div>
+</div>
+
+<div style="background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1.25rem;margin-bottom:16px">
+  <p class="section-title">المشرف / معدّ المحضر <span style="font-weight:400;font-size:12px;color:var(--text-muted)">Supervisor / Report Prepared By</span></p>
+  <div style="position:relative;margin-bottom:8px">
+    <label class="bilabel">اسم المشرف <span class="en">Supervisor Name</span></label>
+    <input id="supervisor-search" type="text" placeholder="ابحث بالرقم الوظيفي أو الاسم" autocomplete="off" style="width:100%;box-sizing:border-box"/>
+    <p style="font-size:12px;color:var(--text-muted);margin:6px 0 0">معدّ المحضر هو الموظف المسجّل دخول ولا يمكن تغييره.</p>
+    <div id="supervisor-suggestions" style="display:none;position:absolute;top:100%;left:0;right:0;z-index:20;background:#fff;border:1px solid var(--border-strong);border-top:none;border-radius:0 0 var(--radius) var(--radius);max-height:220px;overflow-y:auto;box-shadow:0 4px 10px rgba(0,0,0,0.08)"></div>
+  </div>
+  <label class="bilabel">توقيع المشرف <span class="en">Supervisor Signature</span></label>
+  <canvas id="supervisor-sig" width="620" height="130" style="width:100%;height:130px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface-1);touch-action:none"></canvas>
+  <div style="display:flex;justify-content:flex-end;margin:6px 0 0">
+    <button id="supervisor-sig-clear" style="font-size:12px">مسح التوقيع</button>
+  </div>
+</div>
+
+<div style="background:#FFF8E1;border-radius:12px;border:1px solid #F0D98C;padding:1rem 1.25rem;margin-bottom:16px">
+  <p style="font-size:12px;margin:0 0 6px;line-height:1.6">إقرار: توقيع السائق على هذا المحضر يؤكد اطلاعه على محتواه ولا يعني بالضرورة موافقته على المخالفة المسجلة. وفي حال رفض السائق التوقيع، يتم إثبات ذلك من قبل المشرف.</p>
+  <p style="font-size:11px;color:var(--text-secondary);margin:0;line-height:1.6">Acknowledgment: The driver's signature confirms that the driver has reviewed the contents of this report and does not necessarily indicate agreement with the recorded violation. If the driver refuses to sign, the refusal shall be documented by the supervisor.</p>
+</div>
+
+<p id="form-error" style="color:var(--text-danger);font-size:13px;display:none;margin:0 0 10px"></p>
+<button id="submit-form" style="width:100%;font-weight:600;padding:12px">حفظ المحضر</button>
+<p id="form-success" style="color:var(--text-success);font-size:13px;display:none;margin-top:10px">✓ تم حفظ المحضر بنجاح</p>
+</div>
+
+<div id="view-admin" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <span style="font-size:13px;color:var(--text-secondary)" id="record-count">0 محضر</span>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">
+      <button id="sheet-btn" style="font-size:13px">📊 شيت المحاضر</button>
+      <button id="sync-all-btn" style="font-size:13px;display:none">⬆ رفع غير المرفوعة</button>
+      <button id="export-btn" style="font-size:13px">تصدير Excel</button>
+      <button id="delete-all-btn" style="font-size:13px;color:var(--text-danger);border-color:var(--border-danger)">حذف الكل</button>
+    </div>
+  </div>
+  <div id="records-wrap" style="display:flex;flex-direction:column;gap:10px"></div>
+  <p id="empty-msg" style="color:var(--text-muted);font-size:14px;display:none">لا توجد محاضر محفوظة بعد.</p>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+/* ====== الإعدادات: رابط Apps Script لشيت المحاضر (ينتهي بـ /exec) ====== */
+const VIOLATION_URL = 'https://script.google.com/macros/s/AKfycbynHzaInTH3aul1LCv2_w6FkEZ0_r-24P9Tw5P8WuhNqgHI-8H5yuU8tOl1Uko3OVl4Ag/exec';
+const DRIVER_DATA=[];   // قائمة السائقين تنحمّل من النظام بعد الدخول (بيانات شخصية — ما تنكتب في الصفحة العامة)
+if(window.NWAuth&&NWAuth.drivers) NWAuth.drivers().then(L=>{ DRIVER_DATA.length=0; L.forEach(d=>DRIVER_DATA.push([d[0],d[1],d[2],d[3]]));  window.dispatchEvent(new Event('nw-drivers')); });   // [iqama, empId, name, nationality]
+const SUPERVISORS=[["1030067","AHMED ABDUL SAMMAD OSMAN"],["1030179","Tariq Abdulmajid Abdulmajid"],["1030194","Faisal Hasan Jabril"],["1030080","MOHANED ALI AZIEBI"],["1030126","NAWAF KAMEL Futayni"],["1031647","MOHAMMED ABDULFTAH AQLAN"],["1031649","yahi wilzin aydi"],["1031451","Saif Al-Islam Ibrahim Muhammad"],["1030027","Ahmed Arif Mojmal"],["2010008","MOHAMMED ALSHUBAYLI"],["1031611","Abdul Rahman Muhammad Ahmed Ali"],["1030118","abdulrahman muradi"],["1031617","Ammar Nasser Muhammad Al-Sabeer"],["1030244","Khalid Muhammad Waris"],["1031662","Ahmed Awad Ahmed bin Laden"],["1030525","AHMED SABRI MOHAMED ALI"],["1030372","HAMID ABDULLAH AL NEHMI"],["1031554","Hossam Naji Muhammad Naji"],["1031615","Abdullah Yusuf Bakr Abdul Rahman"],["1030371","TAMER NABIL SHAABAN"],["1031665","Jamal Jamil Ahmed Abadi Shaaban"],["1030073","Hamza Muhammad Ahmed"],["1030293","Abdullah Ahmed Alsharif"],["1030178","salman khan 'ayuwb khan"],["1031671","Muhammad Saeed Obaid bin Laden"],["1031663","Ahmed Sabry Al-Sayed Khalil"],["1031612","MOHAMMED AHMED"],["1030496","Osama Salim Maqboul Hussein"],["1030409","Nawaf Atteah Mashe"],["1031664","eabdallah muhamad eali maeafa"],["1030546","Mousa Ail Ali Farhan"],["1030438","Amjad Al Shehri"],["1031659","DhaifAllah Awadh Alammari"],["1030465","Abdullah Al-Qahtani"]];       // [empId, name]
+
+const DRIVER_DB={};
+DRIVER_DATA.forEach(r=>{ DRIVER_DB[r[0]] = {empId:r[1], name:r[2], nationality:r[3]}; });
+window.addEventListener('nw-drivers',()=>DRIVER_DATA.forEach(r=>{ DRIVER_DB[r[0]] = {empId:r[1], name:r[2], nationality:r[3]}; }));
+
+function loadStore(){
+  try { return JSON.parse(localStorage.getItem('nwb_violation_reports')||'[]'); } catch(e){ return []; }
+}
+// Photos live in IndexedDB (much larger than localStorage), keyed by recordId
+const PhotoDB=(function(){
+  let dbp=null;
+  function open(){
+    if(dbp) return dbp;
+    dbp=new Promise((res,rej)=>{
+      if(!window.indexedDB) return rej(new Error('IndexedDB غير متاح'));
+      const r=indexedDB.open('nwb_violation_photos',1);
+      r.onupgradeneeded=()=>r.result.createObjectStore('photos');
+      r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error);
+    });
+    return dbp;
+  }
+  function tx(mode,fn){
+    return open().then(db=>new Promise((res,rej)=>{
+      const t=db.transaction('photos',mode); const st=t.objectStore('photos');
+      const req=fn(st); t.oncomplete=()=>res(req&&req.result); t.onerror=()=>rej(t.error); t.onabort=()=>rej(t.error);
+    }));
+  }
+  return {
+    put:(id,arr)=>tx('readwrite',st=>st.put(arr,id)),
+    get:(id)=>tx('readonly',st=>st.get(id)).then(v=>v||[]).catch(()=>[]),
+    del:(id)=>tx('readwrite',st=>st.delete(id)).catch(()=>{}),
+    clear:()=>tx('readwrite',st=>st.clear()).catch(()=>{})
+  };
+})();
+async function recordWithPhotos(rec){
+  if(rec.photos) return rec;
+  if(!rec.photoCount) return Object.assign({},rec,{photos:[]});
+  return Object.assign({},rec,{photos:await PhotoDB.get(rec.recordId)});
+}
+
+function saveStore(arr){
+  try {
+    localStorage.setItem('nwb_violation_reports', JSON.stringify(arr));
+    return true;
+  } catch(e) {
+    return false;
+  }
+}
+
+
+// ---------- PDF generation (same layout as the paper report) ----------
+const ALL_VIOLATIONS=[
+  {ar:'عدم اتباع تعليمات المشرف أو الإدارة', en:'Failure to follow Supervisor / Management instructions'},
+  {ar:'رفض تنفيذ الرحلة المجدولة', en:'Refusal to operate the scheduled trip'},
+  {ar:'مغادرة موقع العمل دون إذن', en:'Leaving the workplace without permission'},
+  {ar:'التأخر أو عدم الحضور في الوقت المحدد', en:'Late arrival or failure to report on time'},
+  {ar:'عدم الالتزام بالزي الرسمي', en:'Failure to comply with uniform requirements'},
+  {ar:'سوء السلوك أو التعامل', en:'Misconduct or inappropriate behavior'},
+  {ar:'مخالفة أخرى', en:'Other Violation'}
+];
+function escHtml(v){ return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function fmtDate(d){ if(!d) return ''; const p=d.split('-'); return p.length===3 ? (p[2]+'/'+p[1]+'/'+p[0]) : d; }
+
+
+function textToImage(text, widthPx){
+  const scale=3, fontPx=15, lineH=Math.round(fontPx*1.9);
+  const font='bold '+fontPx+'px Arial, Tahoma, "Segoe UI", sans-serif';
+  const meas=document.createElement('canvas').getContext('2d');
+  meas.font=font;
+  const lines=[];
+  String(text).split(/\r?\n/).forEach(par=>{
+    const words=par.split(/\s+/).filter(Boolean);
+    if(words.length===0){ lines.push(''); return; }
+    let cur='';
+    words.forEach(w=>{
+      const test=cur?cur+' '+w:w;
+      if(meas.measureText(test).width>widthPx && cur){ lines.push(cur); cur=w; }
+      else cur=test;
+    });
+    if(cur) lines.push(cur);
+  });
+  const h=Math.max(1,lines.length)*lineH+6;
+  const c=document.createElement('canvas');
+  c.width=widthPx*scale; c.height=h*scale;
+  const ctx=c.getContext('2d');
+  ctx.scale(scale,scale);
+  ctx.fillStyle='#fff'; ctx.fillRect(0,0,widthPx,h);
+  ctx.fillStyle='#000'; ctx.font=font;
+  ctx.direction='rtl'; ctx.textAlign='right'; ctx.textBaseline='middle';
+  lines.forEach((ln,i)=> ctx.fillText(ln, widthPx, i*lineH+lineH/2+3));
+  return `<img src="${c.toDataURL('image/png')}" style="display:block;width:${widthPx}px;height:${h}px"/>`;
+}
+function textBlock(text){
+  if(!text || !String(text).trim()) return '<div style="min-height:24px"></div>';
+  return textToImage(text, 698);
+}
+
+function buildPdfHtml(rec, logoSrc){
+  const line=(ar,en,val)=>`
+    <div style="display:flex;align-items:flex-end;gap:10px;margin:0 0 12px;font-size:14px">
+      <span style="font-weight:700;white-space:nowrap">${ar}</span>
+      <span style="flex:1;border-bottom:1.5px dotted #555;padding:0 6px 2px;font-weight:700;text-align:center;min-height:18px">${escHtml(val)}</span>
+      <span style="font-weight:700;white-space:nowrap;direction:ltr">${en}</span>
+    </div>`;
+  const sectionTitle=(t)=>`<p style="font-size:14px;font-weight:700;text-decoration:underline;margin:16px 0 10px">${t}</p>`;
+
+  const checkedAr=rec.violations.map(v=>v.ar);
+  const other=rec.violations.find(v=>v.ar==='مخالفة أخرى');
+  const violRows=ALL_VIOLATIONS.map(v=>{
+    const on=checkedAr.includes(v.ar);
+    const isOther=v.ar==='مخالفة أخرى';
+    return `<div style="display:flex;align-items:center;gap:10px;margin:0 0 7px;font-size:13.5px">
+      <span style="display:inline-block;width:15px;height:15px;border:2px solid #000;background:${on?'#d40000':'#fff'};flex-shrink:0"></span>
+      <span>${v.ar} / <span style="direction:ltr;unicode-bidi:embed">${v.en}</span></span>
+      ${isOther?`<span style="flex:1;border-bottom:1.5px dotted #555;padding:0 6px 2px;font-weight:700">${escHtml(other?other.detail:'')}</span>`:''}
+    </div>`;
+  }).join('');
+
+  const driverSig = rec.driverSignature
+    ? `<img src="${rec.driverSignature}" style="height:55px;max-width:200px"/>`
+    : `<span style="font-weight:700;color:#b00">رفض التوقيع / Refused to sign</span>`;
+  const supSig = rec.supervisorSignature
+    ? `<img src="${rec.supervisorSignature}" style="height:55px;max-width:200px"/>`
+    : `<span>—</span>`;
+
+  return `
+  <div style="display:flex;justify-content:flex-start;direction:ltr"><img src="${logoSrc}" style="height:72px"/></div>
+  <p style="text-align:center;font-size:16px;font-weight:700;text-decoration:underline;margin:18px 0 22px">
+    محضر مخالفة وعدم اتباع التعليمات / <span style="direction:ltr;unicode-bidi:embed">VIOLATION &amp; NON-COMPLIANCE REPORT</span>
+  </p>
+  <div style="display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin:0 0 16px">
+    <span>التاريخ / Date: ${escHtml(fmtDate(rec.date))}</span>
+    <span>الوقت / Time: <span style="direction:ltr;unicode-bidi:embed">${escHtml(rec.time)}</span></span>
+  </div>
+  ${line('الموقع / الكراج:','Location / Depot:',rec.depot)}
+
+  ${sectionTitle('1- بيانات السائق / DRIVER INFORMATION')}
+  ${line('اسم السائق:','Driver Name:',rec.driverName)}
+  ${line('رقم الإقامة:','Iqama No.:',rec.driverId)}
+  ${line('الرقم الوظيفي:','Employee ID:',rec.empId)}
+  ${line('المسار / الرحلة:','Route / Trip:',rec.trip)}
+  ${line('رقم الحافلة:','Bus No.:',rec.busNo)}
+
+  ${sectionTitle('2- نوع المخالفة / TYPE OF VIOLATION')}
+  ${violRows}
+
+  ${sectionTitle('3- وصف المخالفة بالتفصيل / Detailed description of the violation')}
+  <div style="margin:0 0 8px">${textBlock(rec.description)}</div>
+  <p style="font-size:14px;font-weight:700;text-decoration:underline;margin:14px 0 8px">ملاحظات / Remarks</p>
+  <div style="margin:0 0 8px">${textBlock(rec.remarks)}</div>
+
+  ${sectionTitle('4- السائق / DRIVER')}
+  <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:700;min-height:56px">
+    <span>الاسم / Name: ${escHtml(rec.driverName)}</span>
+    <span style="display:flex;align-items:center;gap:10px">التوقيع / Signature: ${driverSig}</span>
+  </div>
+
+  ${sectionTitle('المشرف / معدّ المحضر / SUPERVISOR / REPORT PREPARED BY')}
+  <div style="display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:700;min-height:56px">
+    <span>الاسم / Name: ${escHtml(rec.supervisorName)}</span>
+    <span style="display:flex;align-items:center;gap:10px">التوقيع / Signature: ${supSig}</span>
+  </div>
+
+  <p style="font-size:11.5px;font-weight:700;line-height:1.7;margin:20px 0 6px">إقرار: توقيع السائق على هذا المحضر يؤكد اطلاعه على محتواه ولا يعني بالضرورة موافقته على المخالفة المسجلة. وفي حال رفض السائق التوقيع، يتم إثبات ذلك من قبل المشرف.</p>
+  <p style="font-size:11px;font-weight:700;line-height:1.6;margin:0;direction:ltr;text-align:left">Acknowledgment: The driver's signature confirms that the driver has reviewed the contents of this report and does not necessarily indicate agreement with the recorded violation. If the driver refuses to sign, the refusal shall be documented by the supervisor.</p>
+  `;
+}
+
+function buildPhotosPageHtml(rec, logoSrc){
+  const n=rec.photos.length;
+  const imgH = n<=2 ? 430 : 300;
+  const cells=rec.photos.map((p,i)=>`
+    <div style="border:1px solid #999;padding:6px;text-align:center">
+      <img src="${p}" style="width:100%;height:${imgH}px;object-fit:contain;display:block;background:#f4f4f4"/>
+      <p style="margin:6px 0 0;font-size:12px;font-weight:700">صورة ${i+1} / Photo ${i+1}</p>
+    </div>`).join('');
+  return `
+  <div style="display:flex;justify-content:flex-start;direction:ltr"><img src="${logoSrc}" style="height:60px"/></div>
+  <p style="text-align:center;font-size:16px;font-weight:700;text-decoration:underline;margin:16px 0 8px">
+    صور الحالة / <span style="direction:ltr;unicode-bidi:embed">CASE PHOTOS</span>
+  </p>
+  <p style="text-align:center;font-size:13px;font-weight:700;margin:0 0 18px">
+    ${escHtml(rec.driverName)} — ${escHtml(fmtDate(rec.date))} <span style="direction:ltr;unicode-bidi:embed">${escHtml(rec.time)}</span>
+  </p>
+  <div style="display:grid;grid-template-columns:${n===1?'1fr':'1fr 1fr'};gap:14px">${cells}</div>`;
+}
+
+async function generatePDF(rec, opts){
+  const download = !(opts && opts.download===false);
+  if(!window.html2canvas || !window.jspdf) throw new Error('مكتبات PDF لم تُحمّل — تأكد من الاتصال بالإنترنت');
+  const logoSrc=document.querySelector('.wrap img').src;
+  const box=document.createElement('div');
+  box.setAttribute('dir','rtl');
+  box.style.cssText='position:fixed;left:-10000px;top:0;width:794px;-webkit-text-size-adjust:100%;text-size-adjust:100%;background:#fff;color:#000;font-family:Arial,Tahoma,"Segoe UI",sans-serif;padding:36px 48px;box-sizing:border-box';
+  box.innerHTML=buildPdfHtml(rec, logoSrc);
+  document.body.appendChild(box);
+  try{
+    await Promise.all(Array.from(box.querySelectorAll('img')).map(img=> img.complete ? null : new Promise(r=>{img.onload=img.onerror=r;})));
+    const canvas=await html2canvas(box,{scale:2,backgroundColor:'#ffffff',useCORS:true});
+    const { jsPDF }=window.jspdf;
+    const pdf=new jsPDF({orientation:'p',unit:'mm',format:'a4'});
+    const pageW=210, pageH=297;
+    let w=pageW, h=canvas.height*pageW/canvas.width;
+    if(h>pageH){ w=w*pageH/h; h=pageH; }   // keep it on one page
+    pdf.addImage(canvas.toDataURL('image/jpeg',0.95),'JPEG',(pageW-w)/2,0,w,h);
+    if(rec.photos && rec.photos.length){
+      box.innerHTML=buildPhotosPageHtml(rec, logoSrc);
+      await Promise.all(Array.from(box.querySelectorAll('img')).map(img=> img.complete ? null : new Promise(r=>{img.onload=img.onerror=r;})));
+      const c2=await html2canvas(box,{scale:2,backgroundColor:'#ffffff'});
+      let w2=pageW, h2=c2.height*pageW/c2.width;
+      if(h2>pageH){ w2=w2*pageH/h2; h2=pageH; }
+      pdf.addPage();
+      pdf.addImage(c2.toDataURL('image/jpeg',0.9),'JPEG',(pageW-w2)/2,0,w2,h2);
+    }
+    const safeName=(rec.driverName||'driver').replace(/[\\/:*?"<>|]/g,'').trim();
+    const blob=pdf.output('blob');
+    if(download) pdf.save('محضر_'+safeName+'_'+(rec.date||'')+'.pdf');
+    return blob;
+  } finally {
+    box.remove();
+  }
+}
+
+// ---------- رفع المحضر إلى شيت المحاضر (Google Sheet + Drive) ----------
+function blobToBase64(blob){
+  return new Promise((res,rej)=>{ const fr=new FileReader(); fr.onload=()=>res(String(fr.result).split(',')[1]); fr.onerror=()=>rej(fr.error); fr.readAsDataURL(blob); });
+}
+function cloudReady(){ return /^https:\/\/script\.google\.com\/.+\/exec$/.test(VIOLATION_URL); }
+async function uploadRecord(rec, photos, pdfBlob){
+  if(!cloudReady()) throw new Error('رابط الشيت غير مضبوط');
+  if(!pdfBlob) pdfBlob = await generatePDF(Object.assign({},rec,{photos:photos||[]}),{download:false});
+  const lite = Object.assign({}, rec, {driverSigned: !!rec.driverSignature});
+  delete lite.driverSignature; delete lite.supervisorSignature; delete lite.photos;
+  const body = NWAuth.attach({action:'save', record:lite, photos:photos||[], pdf: await blobToBase64(pdfBlob)});
+  const r = await fetch(VIOLATION_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)});
+  const j = await r.json();
+  if(j.error==='AUTH'){ NWAuth.relogin(); throw new Error('انتهت مدة الدخول — سجّل دخول ثم أعد الرفع'); }
+  if(!j.ok) throw new Error(j.error||'خطأ في الشيت');
+  const store=loadStore(); const i=store.findIndex(x=>x.recordId===rec.recordId);
+  if(i>-1){ store[i].synced=true; saveStore(store); }
+  return j;
+}
+
+(function checkStorage(){
+  try {
+    const testKey='__nwb_test__';
+    localStorage.setItem(testKey,'1');
+    localStorage.removeItem(testKey);
+  } catch(e) {
+    const errEl=document.getElementById('form-error');
+    errEl.textContent='يبدو أن تخزين المتصفح محظور في هذه المعاينة. لن تُحفظ السجلات. جرّب فتح الملف في متصفح عادي.';
+    errEl.style.display='block';
+  }
+})();
+
+// default date/time to now
+const dateInput=document.getElementById('report-date');
+const timeInput=document.getElementById('report-time');
+(function setDefaults(){
+  const now=new Date();
+  dateInput.value=now.toISOString().slice(0,10);
+  timeInput.value=now.toTimeString().slice(0,5);
+})();
+
+// ---------- الكراج حسب المستخدم المسجّل ----------
+const gKey=v=>String(v||'').replace(/كراج/g,'').split('/')[0].trim();
+function applyDepotLock(){
+  const G=((window.NWAuth&&NWAuth.garages)||[]).map(gKey).filter(Boolean); if(!G.length) return;
+  const sel=document.getElementById('depot-select');
+  [...sel.options].forEach(o=>{ if(!o.value) return; const ok=G.includes(gKey(o.value)); o.hidden=!ok; o.disabled=!ok; });
+  if(G.length===1){
+    let opt=[...sel.options].find(o=>o.value&&!o.disabled);
+    if(!opt){ opt=new Option('كراج '+G[0],'كراج '+G[0]); sel.add(opt); }
+    sel.value=opt.value; sel.disabled=true;
+  } else if(sel.value && !G.includes(gKey(sel.value))) sel.value='';
+}
+applyDepotLock();
+
+// ---------- Driver search (Iqama) ----------
+const idInput=document.getElementById('drv-id');
+const nameInput=document.getElementById('drv-name');
+const empIdInput=document.getElementById('drv-empid');
+const statusEl=document.getElementById('drv-status');
+const suggestBox=document.getElementById('drv-suggestions');
+
+function applyDriverInfo(rec){
+  nameInput.value=rec.name;
+  empIdInput.value=rec.empId;
+  statusEl.textContent = rec.empId ? 'تم تعبئة بيانات السائق تلقائياً — يمكنك تعديلها' : 'تم تعبئة الاسم — الرقم الوظيفي غير مسجّل لهذا السائق، اكتبه يدوياً';
+  statusEl.style.color = rec.empId ? 'var(--text-success)' : '#b7791f';
+}
+function hideSuggestions(){ suggestBox.style.display='none'; suggestBox.innerHTML=''; }
+function renderSuggestions(query){
+  if(!query){ hideSuggestions(); return; }
+  const ql=query.toLowerCase();
+  const matches=DRIVER_DATA.filter(r=>r[0].includes(query)||r[2].toLowerCase().includes(ql)).slice(0,8);
+  if(matches.length===0){ hideSuggestions(); return; }
+  suggestBox.innerHTML=matches.map(r=>
+    `<div class="drv-suggestion" data-iqama="${r[0]}" style="padding:8px 10px;cursor:pointer;font-size:13px;border-bottom:1px solid var(--border)">
+       <div style="font-weight:600">${r[0]}</div>
+       <div style="color:var(--text-secondary)">${r[2]}</div>
+     </div>`
+  ).join('');
+  suggestBox.style.display='block';
+  suggestBox.querySelectorAll('.drv-suggestion').forEach(el=>{
+    el.addEventListener('mousedown',(e)=>{
+      e.preventDefault();
+      const iqama=el.dataset.iqama;
+      idInput.value=iqama;
+      const rec=DRIVER_DB[iqama];
+      if(rec) applyDriverInfo(rec);
+      hideSuggestions();
+    });
+    el.addEventListener('mouseenter',()=>{ el.style.background='var(--surface-1)'; });
+    el.addEventListener('mouseleave',()=>{ el.style.background=''; });
+  });
+}
+idInput.addEventListener('input',()=>{
+  const query=idInput.value.trim();
+  const rec=DRIVER_DB[query];
+  if(rec){
+    applyDriverInfo(rec);
+  } else if(query){
+    statusEl.textContent='رقم الإقامة غير موجود بالقائمة — أدخل الاسم والرقم الوظيفي يدوياً';
+    statusEl.style.color='var(--text-muted)';
+  } else {
+    statusEl.textContent='';
+  }
+  renderSuggestions(query);
+});
+idInput.addEventListener('focus',()=>{ renderSuggestions(idInput.value.trim()); });
+idInput.addEventListener('blur',()=>{ setTimeout(hideSuggestions,100); });
+document.addEventListener('click',(e)=>{
+  if(e.target!==idInput && !suggestBox.contains(e.target)) hideSuggestions();
+});
+
+// ---------- Supervisor search ----------
+let selectedSupervisor=null;
+const supervisorSearchInput=document.getElementById('supervisor-search');
+const supervisorSuggestBox=document.getElementById('supervisor-suggestions');
+
+function hideSupervisorSuggestions(){ supervisorSuggestBox.style.display='none'; supervisorSuggestBox.innerHTML=''; }
+function renderSupervisorSuggestions(query){
+  if(!query){ hideSupervisorSuggestions(); return; }
+  const q=query.toLowerCase();
+  const matches=SUPERVISORS.filter(r=> r[0].includes(query) || r[1].toLowerCase().includes(q) ).slice(0,8);
+  if(matches.length===0){ hideSupervisorSuggestions(); return; }
+  supervisorSuggestBox.innerHTML=matches.map(r=>
+    `<div class="sup-suggestion" data-empid="${r[0]}" style="padding:8px 10px;cursor:pointer;font-size:13px;border-bottom:1px solid var(--border)">
+       <div style="font-weight:600">${r[1]}</div>
+       <div style="color:var(--text-secondary)">${r[0]}</div>
+     </div>`
+  ).join('');
+  supervisorSuggestBox.style.display='block';
+  supervisorSuggestBox.querySelectorAll('.sup-suggestion').forEach(el=>{
+    el.addEventListener('mousedown',(e)=>{
+      e.preventDefault();
+      const rec=SUPERVISORS.find(r=>r[0]===el.dataset.empid);
+      if(rec){
+        selectedSupervisor={empId:rec[0], name:rec[1]};
+        supervisorSearchInput.value=rec[1]+' ('+rec[0]+')';
+      }
+      hideSupervisorSuggestions();
+    });
+    el.addEventListener('mouseenter',()=>{ el.style.background='var(--surface-1)'; });
+    el.addEventListener('mouseleave',()=>{ el.style.background=''; });
+  });
+}
+/* معدّ المحضر دائماً هو الموظف المسجّل دخول — لا يمكن تغييره */
+function lockSupervisor(){
+  const A=window.NWAuth; if(!A) return;
+  const u=String(A.username||'').trim(), n=String(A.name||'').trim().toLowerCase();
+  const s=SUPERVISORS.find(r=>r[0]===u)||SUPERVISORS.find(r=>r[1].toLowerCase()===n);
+  selectedSupervisor = s ? {empId:s[0], name:s[1]} : {empId:/^\d+$/.test(u)?u:'', name:A.name};
+  supervisorSearchInput.value = selectedSupervisor.name + (selectedSupervisor.empId?' ('+selectedSupervisor.empId+')':'');
+  supervisorSearchInput.readOnly = true;
+  supervisorSearchInput.style.background = 'var(--surface-1)';
+}
+lockSupervisor();
+supervisorSearchInput.addEventListener('input',()=>{
+  selectedSupervisor=null;
+  renderSupervisorSuggestions(supervisorSearchInput.value.trim());
+});
+supervisorSearchInput.addEventListener('focus',()=>{ if(!supervisorSearchInput.readOnly) renderSupervisorSuggestions(supervisorSearchInput.value.trim()); });
+supervisorSearchInput.addEventListener('blur',()=>{ setTimeout(hideSupervisorSuggestions,100); });
+document.addEventListener('click',(e)=>{
+  if(e.target!==supervisorSearchInput && !supervisorSuggestBox.contains(e.target)) hideSupervisorSuggestions();
+});
+
+// ---------- Violation checkboxes ----------
+const v7Checkbox=document.getElementById('v7');
+const v7Text=document.getElementById('v7-text');
+v7Checkbox.addEventListener('change',()=>{
+  v7Text.style.display = v7Checkbox.checked ? 'block' : 'none';
+});
+
+// ---------- Signature pads ----------
+function setupSignaturePad(canvasId, clearBtnId){
+  const canvas=document.getElementById(canvasId);
+  const ctx=canvas.getContext('2d');
+  ctx.strokeStyle='#000';
+  ctx.lineWidth=2; ctx.lineCap='round';
+  let drawing=false, hasSig=false;
+  function pos(e){
+    const r=canvas.getBoundingClientRect();
+    const cx=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
+    const cy=(e.touches?e.touches[0].clientY:e.clientY)-r.top;
+    return {x:cx*canvas.width/r.width, y:cy*canvas.height/r.height};
+  }
+  function start(e){drawing=true;hasSig=true;const p=pos(e);ctx.beginPath();ctx.moveTo(p.x,p.y);e.preventDefault();}
+  function move(e){if(!drawing)return;const p=pos(e);ctx.lineTo(p.x,p.y);ctx.stroke();e.preventDefault();}
+  function end(){drawing=false;}
+  canvas.addEventListener('mousedown',start);canvas.addEventListener('mousemove',move);window.addEventListener('mouseup',end);
+  canvas.addEventListener('touchstart',start);canvas.addEventListener('touchmove',move);canvas.addEventListener('touchend',end);
+  document.getElementById(clearBtnId).addEventListener('click',()=>{ ctx.clearRect(0,0,canvas.width,canvas.height); hasSig=false; });
+  return {
+    canvas,
+    hasSignature: ()=>hasSig,
+    clear: ()=>{ ctx.clearRect(0,0,canvas.width,canvas.height); hasSig=false; },
+    dataUrl: ()=>canvas.toDataURL('image/png')
+  };
+}
+const driverSigPad=setupSignaturePad('driver-sig','driver-sig-clear');
+const supervisorSigPad=setupSignaturePad('supervisor-sig','supervisor-sig-clear');
+
+// ---------- Submit ----------
+const formErr=document.getElementById('form-error');
+const formOk=document.getElementById('form-success');
+
+// ---------- Case photos ----------
+const MAX_PHOTOS=4;
+let casePhotos=[];
+const photoGrid=document.getElementById('photo-grid');
+const photoMsg=document.getElementById('photo-msg');
+function compressImage(file, maxSide=1280, quality=0.65){
+  return new Promise((resolve,reject)=>{
+    const url=URL.createObjectURL(file);
+    const img=new Image();
+    img.onload=()=>{
+      let w=img.naturalWidth, h=img.naturalHeight;
+      const k=Math.min(1, maxSide/Math.max(w,h)); w=Math.round(w*k); h=Math.round(h*k);
+      const c=document.createElement('canvas'); c.width=w; c.height=h;
+      const ctx=c.getContext('2d'); ctx.fillStyle='#fff'; ctx.fillRect(0,0,w,h); ctx.drawImage(img,0,0,w,h);
+      URL.revokeObjectURL(url);
+      resolve(c.toDataURL('image/jpeg',quality));
+    };
+    img.onerror=()=>{ URL.revokeObjectURL(url); reject(new Error('تعذر قراءة الصورة')); };
+    img.src=url;
+  });
+}
+function renderPhotos(){
+  photoGrid.innerHTML='';
+  casePhotos.forEach((src,i)=>{
+    const d=document.createElement('div'); d.className='ph';
+    d.innerHTML=`<img src="${src}" alt="صورة ${i+1}"><button type="button" aria-label="حذف">×</button>`;
+    d.querySelector('button').addEventListener('click',()=>{ casePhotos.splice(i,1); renderPhotos(); });
+    photoGrid.appendChild(d);
+  });
+  photoMsg.textContent = casePhotos.length ? (casePhotos.length+' / '+MAX_PHOTOS+' صور') : '';
+}
+async function addPhotoFiles(files){
+  for(const f of Array.from(files)){
+    if(casePhotos.length>=MAX_PHOTOS){ photoMsg.textContent='الحد الأقصى '+MAX_PHOTOS+' صور'; break; }
+    if(!f.type.startsWith('image/')) continue;
+    try{ casePhotos.push(await compressImage(f)); }catch(e){ photoMsg.textContent=e.message; }
+  }
+  renderPhotos();
+}
+['photo-camera','photo-gallery'].forEach(id=>{
+  const inp=document.getElementById(id);
+  inp.addEventListener('change',async ()=>{ await addPhotoFiles(inp.files); inp.value=''; });
+});
+
+document.getElementById('submit-form').addEventListener('click', ()=>{
+  formErr.style.display='none'; formOk.style.display='none';
+  document.getElementById('viol-error').style.display='none';
+
+  const name=nameInput.value.trim();
+  const empId=empIdInput.value.trim();
+  if(!name || !empId){
+    formErr.textContent='الرجاء تعبئة اسم السائق والرقم الوظيفي';
+    formErr.style.display='block';
+    return;
+  }
+  const checked=Array.from(document.querySelectorAll('.viol-chk')).filter(c=>c.checked);
+  if(checked.length===0){
+    document.getElementById('viol-error').style.display='block';
+    return;
+  }
+  const otherText=v7Checkbox.checked ? v7Text.value.trim() : '';
+  if(v7Checkbox.checked && !otherText){
+    formErr.textContent='الرجاء كتابة تفاصيل "مخالفة أخرى"';
+    formErr.style.display='block';
+    return;
+  }
+  const supervisorName = selectedSupervisor ? selectedSupervisor.name : supervisorSearchInput.value.trim();
+  if(!supervisorName){
+    formErr.textContent='الرجاء إدخال اسم المشرف';
+    formErr.style.display='block';
+    return;
+  }
+  if(!driverSigPad.hasSignature() && !supervisorSigPad.hasSignature()){
+    formErr.textContent='الرجاء توقيع السائق أو توضيح رفضه بتوقيع المشرف';
+    formErr.style.display='block';
+    return;
+  }
+
+  const violations=checked.map(c=>{
+    if(c.id==='v7') return {ar:'مخالفة أخرى', en:'Other Violation', detail:otherText};
+    return {ar:c.dataset.ar, en:c.dataset.en};
+  });
+
+  const record={
+    recordId: Date.now()+'_'+Math.random().toString(36).slice(2,8),
+    date: dateInput.value,
+    time: timeInput.value,
+    depot: document.getElementById('depot-select').value,
+    driverName: name,
+    driverId: idInput.value.trim(),
+    empId: empId,
+    trip: document.getElementById('drv-trip').value.trim(),
+    busNo: document.getElementById('bus-no').value.trim(),
+    violations: violations,
+    description: document.getElementById('description-text').value.trim(),
+    remarks: document.getElementById('remarks-text').value.trim(),
+    driverSignature: driverSigPad.hasSignature() ? driverSigPad.dataUrl() : null,
+    supervisorName: supervisorName,
+    supervisorSignature: supervisorSigPad.hasSignature() ? supervisorSigPad.dataUrl() : null,
+    photoCount: casePhotos.length,
+    createdAt: new Date().toISOString()
+  };
+
+  const photos=casePhotos.slice();
+  const store=loadStore();
+  store.push(record);
+  const ok=saveStore(store);
+  if(!ok){
+    formErr.textContent='تعذر الحفظ: مساحة تخزين المتصفح ممتلئة أو غير متاحة. صدّر المحاضر القديمة إلى Excel ثم احذفها.';
+    formErr.style.display='block';
+    return;
+  }
+
+  formOk.textContent='✓ تم حفظ المحضر — جارٍ تجهيز ملف PDF...';
+  formOk.style.display='block';
+  (photos.length ? PhotoDB.put(record.recordId, photos).catch(e=>{ formErr.textContent='تم حفظ المحضر لكن تعذر حفظ الصور في المتصفح (ستظهر في ملف PDF الحالي فقط)'; formErr.style.display='block'; }) : Promise.resolve())
+    .then(()=>generatePDF(Object.assign({},record,{photos})))
+    .then(blob=>{
+      formOk.textContent='✓ تم حفظ المحضر وتنزيل PDF — جارٍ الرفع لشيت المحاضر... لا تقفل الصفحة حتى تظهر رسالة الرفع';
+      return uploadRecord(record, photos, blob).then(
+        ()=>{ formOk.textContent='✓ تم حفظ المحضر وتنزيل PDF ورفعه لشيت المحاضر'; },
+        e=>{ formErr.textContent='تم حفظ المحضر وتنزيل PDF، لكن تعذّر رفعه للشيت ('+e.message+'). تقدر تعيد الرفع من «سجل المحاضر».'; formErr.style.display='block'; });
+    })
+    .catch(e=>{ formErr.textContent='تم حفظ المحضر لكن تعذر إنشاء PDF: '+e.message; formErr.style.display='block'; });
+  idInput.value=''; nameInput.value=''; empIdInput.value=''; statusEl.textContent=''; hideSuggestions();
+  document.getElementById('drv-trip').value='';
+  document.getElementById('bus-no').value='';
+  document.getElementById('depot-select').value=''; applyDepotLock();
+  document.querySelectorAll('.viol-chk').forEach(c=>c.checked=false);
+  v7Text.value=''; v7Text.style.display='none';
+  document.getElementById('description-text').value='';
+  document.getElementById('remarks-text').value='';
+  driverSigPad.clear();
+  supervisorSearchInput.value=''; selectedSupervisor=null; lockSupervisor();
+  supervisorSigPad.clear();
+  casePhotos=[]; renderPhotos();
+  const now=new Date();
+  dateInput.value=now.toISOString().slice(0,10);
+  timeInput.value=now.toTimeString().slice(0,5);
+});
+
+// ---------- Tabs ----------
+const tabForm=document.getElementById('tab-form');
+const tabAdmin=document.getElementById('tab-admin');
+const viewForm=document.getElementById('view-form');
+const viewAdmin=document.getElementById('view-admin');
+tabForm.addEventListener('click',()=>{
+  tabForm.style.fontWeight='600'; tabAdmin.style.fontWeight='400';
+  viewForm.style.display='block'; viewAdmin.style.display='none';
+});
+tabAdmin.addEventListener('click',()=>{
+  tabAdmin.style.fontWeight='600'; tabForm.style.fontWeight='400';
+  viewForm.style.display='none'; viewAdmin.style.display='block';
+  loadRecords();
+});
+
+let allRecords=[];
+function loadRecords(){
+  const wrap=document.getElementById('records-wrap');
+  const emptyMsg=document.getElementById('empty-msg');
+  allRecords = loadStore().slice().sort((a,b)=> new Date(b.createdAt)-new Date(a.createdAt));
+  wrap.innerHTML='';
+  document.getElementById('record-count').textContent=allRecords.length+' محضر';
+  if(allRecords.length===0){emptyMsg.style.display='block';return;}
+  emptyMsg.style.display='none';
+  allRecords.forEach(rec=>{
+    const card=document.createElement('div');
+    card.style.cssText='background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1rem 1.25rem';
+    const violStr=rec.violations.map(v=>v.ar+(v.detail?(' — '+v.detail):'')).join('، ');
+    const driverSigHtml=rec.driverSignature?`<div><p style="font-size:11px;color:var(--text-muted);margin:0 0 2px">توقيع السائق</p><img src="${rec.driverSignature}" style="height:44px;border:1px solid var(--border);border-radius:6px;background:#fff"/></div>`:'';
+    const supSigHtml=rec.supervisorSignature?`<div><p style="font-size:11px;color:var(--text-muted);margin:0 0 2px">توقيع المشرف</p><img src="${rec.supervisorSignature}" style="height:44px;border:1px solid var(--border);border-radius:6px;background:#fff"/></div>`:'';
+    card.innerHTML=`
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">
+        <div>
+          <p style="font-weight:600;font-size:15px;margin:0">${rec.driverName}</p>
+          <p style="font-size:13px;color:var(--text-secondary);margin:0">إقامة: ${rec.driverId||'-'} · وظيفي: ${rec.empId} · حافلة: ${rec.busNo||'-'}</p>
+        </div>
+        <div style="text-align:left"><span style="font-size:12px;color:var(--text-muted)">${rec.date} ${rec.time}</span><br>
+          ${rec.synced?'<span class="sync-ok">✓ في الشيت</span>':'<span class="sync-no">غير مرفوع للشيت</span>'}</div>
+      </div>
+      <p style="font-size:13px;margin:0 0 4px"><strong>المخالفة:</strong> ${violStr}</p>
+      ${rec.description?`<p style="font-size:12px;color:var(--text-secondary);margin:0 0 4px">${rec.description}</p>`:''}
+      ${rec.depot?`<p style="font-size:12px;color:var(--text-secondary);margin:0 0 4px">الموقع: ${rec.depot}</p>`:''}
+      <p style="font-size:12px;color:var(--text-secondary);margin:0 0 8px">المشرف: ${rec.supervisorName}</p>
+      <div style="display:flex;gap:16px;margin-bottom:8px">${driverSigHtml}${supSigHtml}</div>
+      ${rec.photoCount?`<div class="rec-photos" data-record-key="${rec.recordId}" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;font-size:12px;color:var(--text-muted)">📷 ${rec.photoCount} صور...</div>`:''}
+      <div style="display:flex;justify-content:flex-end;gap:8px">
+        ${rec.synced?'':`<button class="sync-record-btn" data-record-key="${rec.recordId}" style="font-size:12px">⬆ رفع للشيت</button>`}
+        <button class="pdf-record-btn" data-record-key="${rec.recordId}" style="font-size:12px">تحميل PDF</button>
+        <button class="delete-record-btn" data-record-key="${rec.recordId}" style="font-size:12px;color:var(--text-danger);border-color:var(--border-danger)">حذف</button>
+      </div>
+    `;
+    wrap.appendChild(card);
+  });
+  wrap.querySelectorAll('.rec-photos').forEach(async el=>{
+    const photos=await PhotoDB.get(el.dataset.recordKey);
+    el.innerHTML = photos.length
+      ? photos.map(p=>`<img src="${p}" style="width:64px;height:64px;object-fit:cover;border-radius:6px;border:1px solid var(--border);cursor:pointer">`).join('')
+      : 'الصور غير متاحة على هذا الجهاز';
+    el.querySelectorAll('img').forEach(img=>img.addEventListener('click',()=>{ const w=window.open(); if(w){ w.document.write('<img src="'+img.src+'" style="max-width:100%">'); } }));
+  });
+  wrap.querySelectorAll('.pdf-record-btn').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      const rec=allRecords.find(r=>r.recordId===btn.dataset.recordKey);
+      if(!rec) return;
+      const t=btn.textContent; btn.disabled=true; btn.textContent='جارٍ التجهيز...';
+      try{ await generatePDF(await recordWithPhotos(rec)); } catch(e){ alert('تعذر إنشاء PDF: '+e.message); }
+      finally{ btn.disabled=false; btn.textContent=t; }
+    });
+  });
+  wrap.querySelectorAll('.sync-record-btn').forEach(btn=>{
+    btn.addEventListener('click', async ()=>{
+      const rec=allRecords.find(r=>r.recordId===btn.dataset.recordKey); if(!rec) return;
+      btn.disabled=true; btn.textContent='جارٍ الرفع...';
+      try{ const full=await recordWithPhotos(rec); await uploadRecord(rec, full.photos); loadRecords(); }
+      catch(e){ alert('تعذّر الرفع: '+e.message); btn.disabled=false; btn.textContent='⬆ رفع للشيت'; }
+    });
+  });
+  const pending=allRecords.filter(r=>!r.synced).length;
+  const sab=document.getElementById('sync-all-btn');
+  sab.style.display=pending?'inline-block':'none'; sab.textContent='⬆ رفع غير المرفوعة ('+pending+')';
+  wrap.querySelectorAll('.delete-record-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const key=btn.dataset.recordKey;
+      const rec=allRecords.find(r=>r.recordId===key);
+      const label = rec ? (rec.driverName+' ('+rec.date+')') : 'هذا المحضر';
+      if(!confirm('هل تريد حذف محضر '+label+'؟ هذا الإجراء لا يمكن التراجع عنه.')) return;
+      const store=loadStore().filter(r=>r.recordId!==key);
+      saveStore(store);
+      PhotoDB.del(key);
+      loadRecords();
+    });
+  });
+}
+
+document.getElementById('sync-all-btn').addEventListener('click', async ()=>{
+  const btn=document.getElementById('sync-all-btn');
+  const list=loadStore().filter(r=>!r.synced); if(!list.length) return;
+  if(!confirm('رفع '+list.length+' محضر لشيت المحاضر؟')) return;
+  btn.disabled=true; let ok=0, fail=0;
+  for(const rec of list){
+    btn.textContent='جارٍ الرفع '+(ok+fail+1)+' / '+list.length+'...';
+    try{ const full=await recordWithPhotos(rec); await uploadRecord(rec, full.photos); ok++; }catch(e){ fail++; }
+  }
+  btn.disabled=false; loadRecords();
+  alert('تم رفع '+ok+' محضر'+(fail?(' — وتعذّر رفع '+fail):'')+' ✓');
+});
+/* رفع تلقائي للمحاضر اللي ما انرفعت (مثلاً لو انقطع النت أو انقفلت الصفحة وقت المشاركة بالواتساب)
+   يشتغل عند فتح الصفحة، ولما يرجع النت، ولما يرجع المستخدم للصفحة */
+let autoSyncBusy=false;
+function syncToast(msg, ok){
+  let t=document.getElementById('sync-toast');
+  if(!t){ t=document.createElement('div'); t.id='sync-toast';
+    t.style.cssText='position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:99999;max-width:92vw;padding:12px 18px;border-radius:12px;font-weight:700;font-size:14px;box-shadow:0 8px 24px rgba(0,0,0,.25);text-align:center';
+    document.body.appendChild(t); }
+  t.style.background=ok===false?'#fee2e2':ok?'#dcfce7':'#e0f2fe'; t.style.color=ok===false?'#991b1b':ok?'#166534':'#075985';
+  t.textContent=msg; t.style.display='block';
+  clearTimeout(t._h); if(ok!==undefined) t._h=setTimeout(()=>{ t.style.display='none'; }, 7000);
+}
+async function autoSync(){
+  if(autoSyncBusy || !cloudReady() || !navigator.onLine || !(window.NWAuth && NWAuth.token && NWAuth.token())) return;
+  const list=loadStore().filter(r=>!r.synced); if(!list.length) return;
+  autoSyncBusy=true; let ok=0, fail=0;
+  try{
+    for(const rec of list){
+      syncToast('⬆️ جارٍ رفع محضر لم يُرفع ('+(ok+fail+1)+' / '+list.length+') — لا تقفل الصفحة');
+      try{ const full=await recordWithPhotos(rec); await uploadRecord(rec, full.photos); ok++; }catch(e){ fail++; }
+    }
+    if(ok) syncToast('✅ تم رفع '+ok+' محضر للشيت'+(fail?(' — وتعذّر رفع '+fail+' (بنحاول مرة ثانية لاحقاً)'):''), !fail);
+    else if(fail) syncToast('⚠️ يوجد '+fail+' محضر لم يُرفع للشيت — بنحاول تلقائياً لما يكون النت أفضل', false);
+    try{ loadRecords(); }catch(e){}
+  } finally { autoSyncBusy=false; }
+}
+setTimeout(autoSync, 2500);
+window.addEventListener('online', ()=>setTimeout(autoSync, 1500));
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible') setTimeout(autoSync, 1500); });
+
+document.getElementById('sheet-btn').addEventListener('click', async ()=>{
+  if(!cloudReady()){ alert('رابط الشيت غير مضبوط في البرنامج'); return; }
+  const w=window.open('about:blank','_blank');
+  try{
+    const r=await fetch(VIOLATION_URL+'?action=info&authToken='+encodeURIComponent(NWAuth.token()));
+    const j=await r.json();
+    if(j.error==='AUTH'){ if(w) w.close(); NWAuth.relogin(); return; }
+    if(!j.ok||!j.sheetUrl) throw new Error(j.error||'');
+    if(w) w.location=j.sheetUrl; else location.href=j.sheetUrl;
+  }catch(e){ if(w) w.close(); alert('تعذّر فتح الشيت'); }
+});
+
+document.getElementById('delete-all-btn').addEventListener('click', ()=>{
+  if(allRecords.length===0) return;
+  if(!confirm('هل تريد حذف كل المحاضر وعددها '+allRecords.length+'؟ هذا الإجراء لا يمكن التراجع عنه. تأكد من تصدير أي بيانات تحتاجها أولاً.')) return;
+  saveStore([]);
+  PhotoDB.clear();
+  loadRecords();
+});
+
+document.getElementById('export-btn').addEventListener('click', async ()=>{
+  if(allRecords.length===0)return;
+  const exportBtn=document.getElementById('export-btn');
+  exportBtn.disabled=true;
+  const origText=exportBtn.textContent;
+  exportBtn.textContent='جارٍ تجهيز الملف...';
+  try{
+    const wb=new ExcelJS.Workbook();
+    const ws=wb.addWorksheet('محاضر المخالفات');
+    ws.columns=[
+      {header:'التاريخ', key:'date', width:14},
+      {header:'الوقت', key:'time', width:10},
+      {header:'الموقع/الكراج', key:'depot', width:22},
+      {header:'اسم السائق', key:'name', width:24},
+      {header:'رقم الإقامة', key:'iqama', width:14},
+      {header:'الرقم الوظيفي', key:'empId', width:14},
+      {header:'المسار/الرحلة', key:'trip', width:16},
+      {header:'رقم الحافلة', key:'bus', width:12},
+      {header:'نوع المخالفة', key:'violations', width:40},
+      {header:'الوصف التفصيلي', key:'desc', width:30},
+      {header:'ملاحظات', key:'remarks', width:24},
+      {header:'اسم المشرف', key:'supName', width:22},
+      {header:'توقيع السائق', key:'driverSig', width:16},
+      {header:'توقيع المشرف', key:'supSig', width:16},
+      {header:'عدد الصور', key:'photos', width:10}
+    ];
+    ws.getRow(1).font={bold:true};
+
+    for(const r of allRecords){
+      const violStr=r.violations.map(v=>v.ar+(v.detail?(' — '+v.detail):'')).join(' | ');
+      const row=ws.addRow({
+        date:r.date, time:r.time, depot:r.depot||'',
+        name:r.driverName, iqama:r.driverId||'', empId:r.empId,
+        trip:r.trip||'', bus:r.busNo||'',
+        violations:violStr, desc:r.description||'', remarks:r.remarks||'',
+        supName:r.supervisorName, photos:r.photoCount||0
+      });
+      row.height=60;
+      const rowNum=row.number;
+      if(r.driverSignature){
+        const imgId=wb.addImage({base64:r.driverSignature, extension:'png'});
+        ws.addImage(imgId, { tl:{col:12, row:rowNum-1}, ext:{width:90, height:50} });
+      }
+      if(r.supervisorSignature){
+        const imgId=wb.addImage({base64:r.supervisorSignature, extension:'png'});
+        ws.addImage(imgId, { tl:{col:13, row:rowNum-1}, ext:{width:90, height:50} });
+      }
+    }
+
+    const buf=await wb.xlsx.writeBuffer();
+    const blob=new Blob([buf],{type:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url; a.download='violation_reports.xlsx'; a.click();
+    URL.revokeObjectURL(url);
+  } catch(e){
+    alert('تعذر إنشاء ملف الإكسل: '+e.message);
+  } finally {
+    exportBtn.disabled=false;
+    exportBtn.textContent=origText;
+  }
+});
+</script>
+<!-- ================= حالة المحاضر (من الشيت) — يغيّرها المشرف أو المدير ================= -->
+<style>
+  .vs-panel{background:var(--surface-2);border-radius:12px;border:1px solid var(--border);padding:1rem 1.25rem;margin-bottom:18px}
+  .vs-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+  .vs-head h3{margin:0;font-size:15px;flex:1;min-width:160px}
+  .vs-filters{display:grid;grid-template-columns:180px 1fr auto;gap:8px;margin-bottom:10px}
+  .vs-filters select,.vs-filters input{width:100%;box-sizing:border-box}
+  .vs-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+  .vs-chip{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;cursor:pointer;border:1px solid transparent}
+  .vs-chip.on{outline:2px solid #1F3864}
+  .vs-s0{background:#fef3c7;color:#92400e}.vs-s1{background:#dcfce7;color:#166534}.vs-s2{background:#e5e7eb;color:#374151}
+  .vs-card{border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;margin-bottom:8px;background:var(--surface-1)}
+  .vs-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:flex-start}
+  .vs-card p{margin:2px 0;font-size:13px}
+  .vs-meta{font-size:12px;color:var(--text-secondary)}
+  .vs-edit{display:grid;grid-template-columns:200px 1fr auto;gap:8px;margin-top:8px;padding-top:8px;border-top:1px dashed var(--border)}
+  .vs-edit select,.vs-edit input{width:100%;box-sizing:border-box}
+  .vs-links a{font-size:12px;margin-inline-end:10px}
+  .vs-file{font-size:12.5px;font-weight:700;padding:5px 12px;margin-inline-end:8px;border-radius:8px;cursor:pointer;border:1px solid var(--border);background:var(--surface-1);color:var(--text-primary)}
+  .vs-file:disabled{opacity:.6;cursor:wait}
+  .vs-gal{position:fixed;inset:0;z-index:99995;background:rgba(0,0,0,.88);display:flex;flex-direction:column;align-items:center;padding:16px;overflow:auto}
+  .vs-gal .bar{width:100%;max-width:900px;display:flex;justify-content:space-between;align-items:center;color:#fff;margin-bottom:12px}
+  .vs-gal .bar button{background:#fff;color:#111;border:0;border-radius:8px;padding:6px 14px;font-weight:700;cursor:pointer}
+  .vs-gal img{max-width:min(900px,100%);width:100%;height:auto;border-radius:10px;margin-bottom:14px;background:#222}
+  .vs-msg{font-size:13px;color:var(--text-muted);padding:10px 0}
+  .vs-local-h{font-size:14px;font-weight:700;margin:4px 0 10px;color:var(--nw-muted,#64748b)}
+  @media (max-width:640px){.vs-filters,.vs-edit{grid-template-columns:1fr}}
+</style>
+<script>
+(function(){
+  const admin=document.getElementById('view-admin'); if(!admin||!window.NWAuth) return;
+  const ST=['معلّق','محوّل للتحقيق','مغلق بدون إجراء'];   // 3 حالات فقط
+  const IC={'معلّق':'🟡','محوّل للتحقيق':'✅','مغلق بدون إجراء':'⚪'};
+  const cls=s=>'vs-s'+Math.max(0,ST.indexOf(s));
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const canEdit=NWAuth.role==='مدير'||NWAuth.role==='مشرف';
+
+  const panel=document.createElement('div'); panel.className='vs-panel';
+  panel.innerHTML=`<div class="vs-head"><h3>📋 كل المحاضر وحالتها (من الشيت)</h3><button id="vs-refresh" type="button" style="font-size:13px">↻ تحديث</button></div>
+    <div class="vs-chips" id="vs-chips"></div>
+    <div class="vs-filters"><select id="vs-status"><option value="">كل الحالات</option>${ST.map(s=>`<option value="${s}">${IC[s]} ${s}</option>`).join('')}</select>
+      <input id="vs-q" type="search" placeholder="بحث بالاسم أو الإقامة أو الرحلة..."/><span></span></div>
+    <div id="vs-list"><p class="vs-msg">جاري التحميل...</p></div>`;
+  admin.insertBefore(panel, admin.firstChild);
+  const lh=document.createElement('p'); lh.className='vs-local-h'; lh.textContent='📱 المحاضر المحفوظة على هذا الجهاز';
+  admin.insertBefore(lh, panel.nextSibling);
+
+  let REC=[], loaded=false;
+  async function load(){
+    const L=document.getElementById('vs-list');
+    if(typeof cloudReady==='function' && !cloudReady()){ L.innerHTML='<p class="vs-msg">رابط الشيت غير مضبوط في البرنامج</p>'; return; }
+    L.innerHTML='<p class="vs-msg">جاري التحميل...</p>';
+    try{
+      const r=await fetch(VIOLATION_URL+'?action=list&authToken='+encodeURIComponent(NWAuth.token()));
+      const j=await r.json();
+      if(j.error==='AUTH'){ NWAuth.relogin&&NWAuth.relogin(); throw new Error('انتهت مدة الدخول'); }
+      if(!j.ok) throw new Error(j.error||'ERR');
+      REC=j.records||[]; loaded=true; draw();
+    }catch(e){ L.innerHTML='<p class="vs-msg" style="color:var(--text-danger)">تعذّر تحميل المحاضر من الشيت: '+esc(e.message)+'</p>'; }
+  }
+  function draw(){
+    const fs=document.getElementById('vs-status').value, q=document.getElementById('vs-q').value.trim().toLowerCase();
+    const cnt={}; ST.forEach(s=>cnt[s]=0); REC.forEach(r=>cnt[r.status]=(cnt[r.status]||0)+1);
+    document.getElementById('vs-chips').innerHTML=ST.map(s=>`<span class="vs-chip ${cls(s)}${fs===s?' on':''}" data-s="${s}">${IC[s]} ${s}: ${cnt[s]||0}</span>`).join('');
+    const list=REC.filter(r=>(!fs||r.status===fs)&&(!q||[r.driverName,r.driverId,r.empId,r.trip,r.busNo,r.violation,r.depot].join(' ').toLowerCase().includes(q)));
+    const L=document.getElementById('vs-list');
+    if(!list.length){ L.innerHTML='<p class="vs-msg">لا توجد محاضر</p>'; return; }
+    L.innerHTML=list.slice(0,200).map((r,i)=>`<div class="vs-card" data-id="${esc(r.id)}">
+      <div class="vs-top"><div><p style="font-weight:700;font-size:15px">${esc(r.driverName)}</p>
+        <p class="vs-meta">إقامة: ${esc(r.driverId||'-')} · رحلة: ${esc(r.trip||'-')} · حافلة: ${esc(r.busNo||'-')}</p></div>
+        <div style="text-align:end"><span class="vs-chip ${cls(r.status)}">${IC[r.status]||''} ${esc(r.status)}</span><br><span class="vs-meta">${esc(r.date)} ${esc(r.time)}</span></div></div>
+      <p><strong>المخالفة:</strong> ${esc(r.violation)}</p>
+      ${r.depot?`<p class="vs-meta">الموقع: ${esc(r.depot)}</p>`:''}
+      <p class="vs-meta">المشرف: ${esc(r.supervisor)}${r.driverSigned?' · '+esc(r.driverSigned):''}</p>
+      ${r.statusBy?`<p class="vs-meta">آخر تحديث للحالة: ${esc(r.statusBy)} · ${esc(r.statusAt)}${r.statusNote?' — '+esc(r.statusNote):''}</p>`:''}
+      <div class="vs-links">${r.hasPdf?`<button type="button" class="vs-file" data-kind="pdf">📄 فتح PDF</button>`:''}${r.hasPhotos?`<button type="button" class="vs-file" data-kind="photos">🖼️ الصور</button>`:''}</div>
+      ${canEdit?`<div class="vs-edit"><select class="vs-sel">${ST.map(s=>`<option value="${s}"${s===r.status?' selected':''}>${IC[s]} ${s}</option>`).join('')}</select>
+        <input class="vs-note" type="text" maxlength="300" placeholder="ملاحظة (اختياري) — مثال: رقم خطاب التحقيق" value="${esc(r.statusNote||'')}"/>
+        <button type="button" class="vs-save" style="font-weight:700;background:#1F3864;color:#fff;border-color:#1F3864">حفظ الحالة</button></div>`:''}
+    </div>`).join('')+(list.length>200?`<p class="vs-msg">يظهر أول 200 — استخدم البحث أو الفلتر</p>`:'');
+  }
+  /* فتح الملف من البرنامج (بدون رابط Drive) */
+  const b64ToBlob=(b64,mime)=>{ const bin=atob(b64), u=new Uint8Array(bin.length); for(let i=0;i<bin.length;i++) u[i]=bin.charCodeAt(i); return new Blob([u],{type:mime}); };
+  async function openFile(btn){
+    const id=btn.closest('.vs-card').dataset.id, kind=btn.dataset.kind, label=btn.textContent;
+    const win = kind==='pdf' ? window.open('','_blank') : null;   // نفتح النافذة قبل الانتظار عشان ما يمنعها المتصفح
+    if(win) win.document.write('<p style="font-family:sans-serif;text-align:center;margin-top:40px">⏳ جاري تحميل المحضر...</p>');
+    btn.disabled=true; btn.textContent='⏳ ...';
+    try{
+      const r=await fetch(VIOLATION_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(NWAuth.attach({action:'file',recordId:id,kind}))});
+      const j=await r.json();
+      if(j.error==='AUTH'){ NWAuth.relogin&&NWAuth.relogin(); throw new Error('انتهت مدة الدخول'); }
+      if(j.error==='FORBIDDEN') throw new Error('هذا المحضر لكراج غير مسموح لك');
+      if(!j.ok) throw new Error(j.error==='NO_FILE'?'الملف غير موجود':(j.error||'ERR'));
+      if(kind==='pdf'){
+        const url=URL.createObjectURL(b64ToBlob(j.data,'application/pdf'));
+        if(win){ win.location.href=url; } else { const a=document.createElement('a'); a.href=url; a.download=j.name||'محضر.pdf'; a.click(); }
+        setTimeout(()=>URL.revokeObjectURL(url),120000);
+      }else{
+        const g=document.createElement('div'); g.className='vs-gal';
+        g.innerHTML=`<div class="bar"><b>🖼️ ${(j.images||[]).length}</b><button type="button">✕ إغلاق</button></div>`+
+          (j.images||[]).map(x=>`<img alt="" src="data:${esc(x.mime)};base64,${x.data}">`).join('')+(!(j.images||[]).length?'<p style="color:#fff">لا توجد صور</p>':'');
+        g.addEventListener('click',ev=>{ if(ev.target===g||ev.target.tagName==='BUTTON') g.remove(); });
+        document.body.appendChild(g);
+      }
+    }catch(err){ if(win) win.close(); alert('تعذّر فتح الملف: '+err.message); }
+    btn.disabled=false; btn.textContent=label;
+  }
+
+  panel.addEventListener('click',async e=>{
+    const fb=e.target.closest('.vs-file'); if(fb){ openFile(fb); return; }
+    const chip=e.target.closest('#vs-chips .vs-chip'); if(chip){ const sel=document.getElementById('vs-status'); sel.value=sel.value===chip.dataset.s?'':chip.dataset.s; draw(); return; }
+    if(e.target.id==='vs-refresh'){ load(); return; }
+    const b=e.target.closest('.vs-save'); if(!b) return;
+    const card=b.closest('.vs-card'), id=card.dataset.id, st=card.querySelector('.vs-sel').value, note=card.querySelector('.vs-note').value.trim();
+    b.disabled=true; b.textContent='جارٍ الحفظ...';
+    try{
+      const body=NWAuth.attach({action:'setStatus',recordId:id,status:st,note});
+      const r=await fetch(VIOLATION_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(body)});
+      const j=await r.json();
+      if(j.error==='FORBIDDEN') throw new Error('تغيير الحالة للمشرف والمدير فقط');
+      if(!j.ok) throw new Error(j.error||'ERR');
+      const rec=REC.find(x=>String(x.id)===String(id)); if(rec){ rec.status=j.status; rec.statusNote=j.note; rec.statusBy=j.statusBy; rec.statusAt=j.statusAt; }
+      draw();
+    }catch(err){ b.disabled=false; b.textContent='حفظ الحالة'; alert('تعذّر حفظ الحالة: '+err.message); }
+  });
+  document.getElementById('vs-status').addEventListener('change',draw);
+  document.getElementById('vs-q').addEventListener('input',draw);
+  document.getElementById('tab-admin').addEventListener('click',()=>{ if(!loaded) load(); });
+})();
+</script>
+<!-- ================= اللغة حسب الصفحة الرئيسية (عربي / English) ================= -->
+<script>
+(function(){
+  var lang='ar'; try{ lang=localStorage.getItem('hubLang')==='en'?'en':'ar'; }catch(e){}
+  // لو تغيّرت اللغة من الصفحة الرئيسية: نعيد التحميل باللغة الجديدة
+  window.addEventListener('storage',function(e){ if(e.key==='hubLang' && (e.newValue==='en'?'en':'ar')!==lang) location.reload(); });
+  if(lang!=='en') return;
+
+  var root=document.querySelector('.wrap'); if(!root) return;
+  document.documentElement.lang='en'; document.documentElement.dir='ltr';
+
+  /* ١) العناوين الثنائية: نخفي العربي ونعرض الإنجليزي */
+  var st=document.createElement('style');
+  st.textContent='.ar-t{display:none!important}.en-t{display:inline!important;font-size:inherit!important;color:inherit!important;font-weight:inherit!important;margin:0!important}'+
+    '.chk-row label .en-t{display:inline!important}.wrap{direction:ltr}';
+  document.head.appendChild(st);
+  function wrapArabic(el, enEl){
+    Array.prototype.slice.call(el.childNodes).forEach(function(n){
+      if(n.nodeType===3 && /[؀-ۿ]/.test(n.nodeValue)){
+        var num=(n.nodeValue.match(/^\s*(\d+)-\s*/)||[])[1];
+        var s=document.createElement('span'); s.className='ar-t'; s.textContent=n.nodeValue; el.replaceChild(s,n);
+        if(num && enEl && enEl.textContent.indexOf(num+'-')!==0) enEl.textContent=num+'- '+enEl.textContent;
+      }
+    });
+  }
+  root.querySelectorAll('.bilabel, .chk-row label').forEach(function(l){ var en=l.querySelector('.en'); if(en){ en.classList.add('en-t'); wrapArabic(l,en); } });
+  root.querySelectorAll('.section-title').forEach(function(p){ var en=p.querySelector('span'); if(en){ en.classList.add('en-t'); wrapArabic(p,en); } });
+  root.querySelectorAll('p').forEach(function(p){ if(/^\s*إقرار:/.test(p.textContent)) p.classList.add('ar-t'); });
+
+  /* ٢) باقي النصوص: قاموس عربي ← إنجليزي (الأطول أولاً) */
+  var D={
+    'محضر مخالفة وعدم اتباع التعليمات':'Violation & Non-Compliance Report','محضر جديد':'New report','سجل المحاضر':'Reports log','اختر الموقع':'Select location',
+    'يُعبّى تلقائياً أو يدوياً':'Auto-filled or entered manually','يُعبّى تلقائياً':'Auto-filled','مثال: ':'e.g. ','اكتب المخالفة الأخرى هنا':'Describe the other violation here',
+    'الرجاء اختيار نوع مخالفة واحد على الأقل':'Please select at least one violation type','وصف تفصيلي للمخالفة...':'Detailed description of the violation...',
+    'ملاحظات إضافية (اختياري)':'Additional remarks (optional)','اختياري — حتى 4 صور':'optional — up to 4 photos','التقاط صورة':'Take photo','من المعرض':'From gallery',
+    'مسح التوقيع':'Clear signature','ابحث بالرقم الوظيفي أو الاسم':'Search by employee ID or name',
+    'معدّ المحضر هو الموظف المسجّل دخول ولا يمكن تغييره.':'The report is prepared by the signed-in employee and cannot be changed.',
+    'تم حفظ المحضر بنجاح':'Report saved successfully','حفظ المحضر':'Save report','شيت المحاضر':'Reports sheet','رفع غير المرفوعة':'Upload pending',
+    'تصدير Excel':'Export Excel','حذف الكل':'Delete all','لا توجد محاضر محفوظة بعد.':'No saved reports yet.',
+    'يبدو أن تخزين المتصفح محظور في هذه المعاينة. لن تُحفظ السجلات. جرّب فتح الملف في متصفح عادي.':'Browser storage seems blocked here. Records will not be saved. Try a normal browser.',
+    'رقم الإقامة غير موجود بالقائمة — أدخل الاسم والرقم الوظيفي يدوياً':'Iqama not found in the list — enter the name and employee ID manually',
+    'تم تعبئة بيانات السائق تلقائياً — يمكنك تعديلها':'Driver details filled automatically — you can edit them',
+    'تم تعبئة الاسم — الرقم الوظيفي غير مسجّل لهذا السائق، اكتبه يدوياً':'Name filled — no employee ID on file for this driver, enter it manually',
+    'تعذر قراءة الصورة':'Could not read the image','الحد الأقصى ':'Maximum ','الرجاء تعبئة اسم السائق والرقم الوظيفي':'Please fill in the driver name and employee ID',
+    'الرجاء كتابة تفاصيل "مخالفة أخرى"':'Please describe the "Other violation"','الرجاء إدخال اسم المشرف':'Please enter the supervisor name',
+    'الرجاء توقيع السائق أو توضيح رفضه بتوقيع المشرف':'The driver must sign, or the supervisor must sign to document the refusal',
+    'تعذر الحفظ: مساحة تخزين المتصفح ممتلئة أو غير متاحة. صدّر المحاضر القديمة إلى Excel ثم احذفها.':'Could not save: browser storage is full or unavailable. Export old reports to Excel, then delete them.',
+    'تم حفظ المحضر — جارٍ تجهيز ملف PDF...':'Report saved — preparing PDF...',
+    'تم حفظ المحضر لكن تعذر حفظ الصور في المتصفح (ستظهر في ملف PDF الحالي فقط)':'Report saved, but the photos could not be stored in the browser (they appear only in this PDF)',
+    'تم حفظ المحضر وتنزيل PDF — جارٍ الرفع لشيت المحاضر...':'Report saved and PDF downloaded — uploading to the reports sheet...',
+    'تم حفظ المحضر وتنزيل PDF ورفعه لشيت المحاضر':'Report saved, PDF downloaded and uploaded to the reports sheet',
+    'تم حفظ المحضر وتنزيل PDF، لكن تعذّر رفعه للشيت (':'Report saved and PDF downloaded, but the upload to the sheet failed (',
+    '). تقدر تعيد الرفع من «سجل المحاضر».':'). You can retry from "Reports log".','تم حفظ المحضر لكن تعذر إنشاء PDF: ':'Report saved, but the PDF could not be created: ',
+    'إقامة: ':'Iqama: ','وظيفي: ':'Emp ID: ','حافلة: ':'Bus: ','غير مرفوع للشيت':'Not uploaded','في الشيت':'In sheet','المخالفة:':'Violation:',
+    'الموقع: ':'Location: ','المشرف: ':'Supervisor: ','توقيع السائق':'Driver signature','توقيع المشرف':'Supervisor signature','رفع للشيت':'Upload to sheet',
+    'تحميل PDF':'Download PDF','الصور غير متاحة على هذا الجهاز':'Photos not available on this device','جارٍ التجهيز...':'Preparing...','جارٍ الرفع...':'Uploading...',
+    'جارٍ الرفع ':'Uploading ','جارٍ تجهيز الملف...':'Preparing file...','رفض التوقيع':'Refused to sign','مخالفة أخرى':'Other violation',
+    'هل تريد حذف كل المحاضر وعددها ':'Delete all reports — total ','هل تريد حذف محضر ':'Delete the report of ','؟ هذا الإجراء لا يمكن التراجع عنه.':'? This cannot be undone.',
+    ' تأكد من تصدير أي بيانات تحتاجها أولاً.':' Make sure to export any data you need first.',' محضر لشيت المحاضر؟':' reports to the reports sheet?','تم رفع ':'Uploaded ',
+    ' — وتعذّر رفع ':' — failed: ','رابط الشيت غير مضبوط في البرنامج':'The sheet link is not set in the tool','رابط الشيت غير مضبوط':'Sheet link not set','تعذّر فتح الشيت':'Could not open the sheet',
+    'تعذر إنشاء PDF: ':'Could not create PDF: ','تعذّر الرفع: ':'Upload failed: ','تعذر إنشاء ملف الإكسل: ':'Could not create the Excel file: ','خطأ في الشيت':'Sheet error',
+    'مكتبات PDF لم تُحمّل — تأكد من الاتصال بالإنترنت':'PDF libraries did not load — check your connection','انتهت مدة الدخول — سجّل دخول ثم أعد الرفع':'Session expired — sign in, then upload again',
+    'كل المحاضر وحالتها (من الشيت)':'All reports and their status (from the sheet)','المحاضر المحفوظة على هذا الجهاز':'Reports saved on this device',
+    'كل الحالات':'All statuses','بحث بالاسم أو الإقامة أو الرحلة...':'Search by name, Iqama or trip...','جاري التحميل...':'Loading...','↻ تحديث':'↻ Refresh',
+    'تعذّر تحميل المحاضر من الشيت: ':'Could not load reports from the sheet: ','لا توجد محاضر':'No reports','يظهر أول 200 — استخدم البحث أو الفلتر':'Showing the first 200 — use search or filter',
+    'رحلة: ':'Trip: ','آخر تحديث للحالة: ':'Status updated by: ','فتح PDF':'Open PDF','الصور':'Photos','حفظ الحالة':'Save status','جارٍ الحفظ...':'Saving...',
+    'ملاحظة (اختياري) — مثال: رقم خطاب التحقيق':'Note (optional) — e.g. investigation letter no.','تغيير الحالة للمشرف والمدير فقط':'Only supervisors and managers can change the status',
+    'تعذّر حفظ الحالة: ':'Could not save the status: ','انتهت مدة الدخول':'Session expired',
+    'مغلق بدون إجراء':'Closed – no action','محوّل للتحقيق':'Referred to investigation','تم التنفيذ':'Action completed','معلّق':'Pending',
+    'هذا المحضر':'this report','صور...':'photos...',' صور':' photos','صورة ':'Photo ','حذف':'Delete',' محضر':' reports','رفع ':'Upload '
+  };
+  // أنواع المخالفات من نفس الصفحة (عربي ← إنجليزي)
+  root.querySelectorAll('.viol-chk[data-ar][data-en]').forEach(function(c){ D[c.getAttribute('data-ar')]=c.getAttribute('data-en'); });
+  var PAIRS=Object.keys(D).sort(function(a,b){ return b.length-a.length; }).map(function(k){ return [k,D[k]]; });
+  var AR=/[؀-ۿ]/;
+  function tr(s){ if(!s||!AR.test(s)) return s; var o=s; PAIRS.forEach(function(p){ if(o.indexOf(p[0])>-1) o=o.split(p[0]).join(p[1]); }); return o; }
+  window.__violTr=tr;
+
+  function apply(node){
+    if(node.nodeType===3){ var p=node.parentNode; if(p && !p.closest('.ar-t,script,style,textarea')){ var v=tr(node.nodeValue); if(v!==node.nodeValue) node.nodeValue=v; } return; }
+    if(node.nodeType!==1 || node.closest('.ar-t')) return;
+    if(node.tagName==='OPTION'){ var tx=node.textContent; if(AR.test(tx)) node.textContent=tx.indexOf(' / ')>-1?tx.split(' / ').slice(1).join(' / '):tr(tx); return; }
+    ['placeholder','title','aria-label','alt'].forEach(function(a){ var v=node.getAttribute&&node.getAttribute(a); if(v&&AR.test(v)) node.setAttribute(a,tr(v)); });
+    var w=document.createTreeWalker(node,NodeFilter.SHOW_TEXT|NodeFilter.SHOW_ELEMENT,null);
+    var n, list=[]; while((n=w.nextNode())) list.push(n);
+    list.forEach(function(x){ if(x.nodeType===3) apply(x); else if(x.tagName==='OPTION'||x.getAttribute('placeholder')||x.getAttribute('title')||x.getAttribute('aria-label')||x.getAttribute('alt')) apply(x); });
+  }
+  apply(root);
+  var busy=false, mo=new MutationObserver(function(ms){
+    if(busy) return; busy=true;
+    ms.forEach(function(m){ if(m.type==='characterData') apply(m.target); else m.addedNodes.forEach(apply); });
+    mo.takeRecords(); busy=false;
+  });
+  mo.observe(root,{childList:true,subtree:true,characterData:true});
+  // الرسائل المنبثقة
+  var A=window.alert, C=window.confirm;
+  window.alert=function(m){ return A.call(window,tr(String(m))); };
+  window.confirm=function(m){ return C.call(window,tr(String(m))); };
+})();
+</script>
+<!-- ================= رابط السجل من القائمة الجانبية (#log) ================= -->
+<script>
+(function(){
+  function setLogHash(on){ var has=location.hash==='#log', base=location.pathname+location.search;
+    if(on&&!has) history.replaceState(null,'',base+'#log'); else if(!on&&has) history.replaceState(null,'',base);
+    window.dispatchEvent(new Event('nw-route')); }
+  var ta=document.getElementById('tab-admin'), tf=document.getElementById('tab-form');
+  if(ta) ta.addEventListener('click',function(){ setLogHash(true); });
+  if(tf) tf.addEventListener('click',function(){ setLogHash(false); });
+  function go(){ if(location.hash==='#log' && ta && document.getElementById('view-admin').style.display==='none') ta.click(); }
+  window.addEventListener('hashchange',go);
+  setTimeout(go,300);
+})();
+</script>
+</body>
+</html>
